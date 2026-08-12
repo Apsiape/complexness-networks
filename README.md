@@ -71,3 +71,16 @@ See `CITATION.cff`. Archived at Zenodo: doi:10.5281/zenodo.21907063.
 ## License
 
 Code (`lean/`) under the MIT License; paper text under CC BY 4.0.
+
+## Changelog
+
+- **v1.0.1** (2026-08-12): corrects Corollary 6.5. Version 1.0.0
+  stated the declared-auxiliary descent accounting as "unit-neutral
+  at best"; the paper's own Theorem 6.3 protocol is nondemolition on
+  the auxiliary pair's frame character, so the descent of a used
+  weight-2k codeword consumes k-1 auxiliaries and yields k pairwise
+  references, each auxiliary returned in kind (net +1, catalytic).
+  Found in internal adversarial review; verified by explicit
+  computation over all measurement branches at |c| = 4 and |c| = 6.
+  No other statement is affected.
+- **v1.0.0** (2026-08-12): initial release.

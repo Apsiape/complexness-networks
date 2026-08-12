@@ -994,11 +994,27 @@ descent is available \emph{because} the declared-auxiliary
 mechanism imports pairwise references; what is ruled out is a
 frame-code charge resisting both declared mechanisms, not one
 resisting every conceivable accounting. The accounting is
-unit-neutral at best: for $|c| = 4$ the descent consumes one $\Om$
-and yields one ($\tau_4$ acts as a relay), and for higher weights
-it consumes more than it yields --- the content is
-\emph{accessibility} of the resource's charge, not net gain;
-quantitative rates remain open. Noncommutativity can make the
+net-positive: the parity measurements of
+Theorem~\ref{thm:puncture} are nondemolition on the auxiliary
+pair's character, so the auxiliary survives with its reference
+intact --- for $|c| = 4$ the descent consumes one $\Om$ and
+yields two ($\Om$ on the target pair \emph{and} on the auxiliary
+pair, in product), and in general the descent of a used
+weight-$2k$ codeword consumes $k-1$ declared auxiliaries and
+yields $k$ pairwise references, each auxiliary returned in kind:
+the descent is catalytic over its auxiliaries.\footnote{Version
+1.0.1 corrects this sentence. Version 1.0.0 stated the accounting
+as ``unit-neutral at best: for $|c|=4$ the descent consumes one
+$\Om$ and yields one ($\tau_4$ acts as a relay), and for higher
+weights it consumes more than it yields,'' which understates
+Theorem~\ref{thm:puncture}'s own protocol: its measurements
+commute with the auxiliary pair's frame character and therefore
+preserve the auxiliary reference. Found in internal adversarial
+review (2026-08-12) and verified by explicit computation over all
+measurement branches at $|c|=4$ and $|c|=6$.} The content is
+\emph{accessibility} of the resource's charge together with unit
+net gain per descent; asymptotic conversion rates remain
+open. Noncommutativity can make the
 frame resource necessary (Proposition~\ref{prop:abelian}); within
 the two declared mechanisms it cannot make a weight-$\ge4$
 character inaccessible.
