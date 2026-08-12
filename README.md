@@ -21,7 +21,7 @@ the known remedy is a shared two-rebit state Ω = ¼(I − J⊗J), the
   transpose-charge code H(σ) ≤ F₂^m that such operations can never
   enlarge; frame-code states realize every even-weight code, with a
   maximal reference one-shot obtainable between holders a,b iff
-  e_a + e_b is a codeword, and rate zero otherwise.
+  e_a + e_b is a codeword, and rate zero under real separable operations with charge-free ancillas otherwise.
 - **Visibility and activation**: which charges can influence network
   statistics obeys a parity law on the source–party incidence graph;
   for frame-code resources, used charges are reducible to the weight-2
@@ -50,7 +50,6 @@ With Lean 4.30.0 and Lake installed (e.g. via elan):
 
 ```
 cd lean
-lake update mathlib
 lake exe cache get
 lake build
 lake env lean axiom_check.lean

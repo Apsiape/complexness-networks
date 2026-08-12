@@ -226,10 +226,12 @@ No safeguard clause is needed: substituting any free state for
 $\eta$ in the realization would exhibit a free realization of $P$
 --- impossible. Usefulness is defined without reference to a
 partition; boundness (Definition~\ref{def:bound}) is the
-partition-relative notion. For \emph{frame resources} (one rebit
-per holder), the frame twirl of Definition~\ref{def:walsh} gives a
-quantitative handle: the twirled resource is free, so usefulness
-certifies that some nontrivial frame character is doing work
+partition-relative notion. For \emph{frame-code resources}
+(Definition~\ref{def:framecode}), whose states are determined by
+their frame characters, the frame twirl of
+Definition~\ref{def:walsh} gives a certification handle: the
+twirled resource is free, so usefulness certifies that some
+nontrivial frame character is doing work
 (Theorem~\ref{thm:activation}).
 
 \paragraph{Conversion classes and rates.} For a fixed partition of
@@ -569,11 +571,13 @@ full operator space; for the frame-code states below the
 components determine the state). The \emph{frame twirl} applies
 independent uniformly random reflections $V$ per rebit; on a frame
 resource it kills every $c\neq0$ component and leaves a diagonal,
-classically correlated --- hence free --- state (for resources
-with several rebits per holder this per-rebit twirl need not
-produce a free state, which is why Definition~\ref{def:bound} and
-Theorems~\ref{thm:activation}--\ref{thm:noirr} are stated for
-frame-code resources). In a fixed assisted realization of a
+classically correlated --- hence free --- state. (The twirl frees
+\emph{any} resource, but only for frame-code states does twirling
+coincide with zeroing all frame characters $\hat\rho(c)$ --- for
+general states the twirl also removes non-frame components, so
+character bookkeeping certifies usefulness only in the frame-code
+setting; this is why Theorem~\ref{thm:activation} and
+Corollary~\ref{thm:noirr} are stated for frame-code resources.) In a fixed assisted realization of a
 correlation $P$, whose outcome probabilities are linear functionals
 $\tr[E\,\rho]$ of the resource operator, a codeword $c$
 \emph{contributes} if some such functional changes when the
@@ -631,10 +635,12 @@ product effects elsewhere span the symmetric operators there, so
 if every choice gave zero moment, the sector $\rho_{e_a+e_b}$
 would pair to zero with a spanning family and vanish; hence
 $D^{a:b}_\Om(\rho)>0$.
-(iii) Consequently, for $m = 2$ no useful resource has zero rate:
-charge zero forces $\zeta = 0$, hence real separability by the
-converse direction of \cite{cfr2001} --- the single load-bearing
-external input of this clause --- hence freeness. For $m = 3$ the
+(iii) Consequently, for $m = 2$ with rebit holders no useful
+resource has zero rate: charge zero forces $\zeta = 0$, hence real
+separability by the converse direction of \cite{cfr2001} --- a
+two-rebit theorem, the single load-bearing external input of this
+clause --- hence freeness (higher-dimensional two-holder carriers
+remain open). For $m = 3$ the
 same holds among resources with $H\neq\{0\}$; whether a
 charge-zero real-entangled three-holder resource can be useful is
 open, as is the regime
@@ -711,7 +717,7 @@ counterpart. Third, neither monotone refines the other: the code
 is magnitude-blind ($\eta_t$ carries the same code for every
 $t>0$, however small), while any scalar sector-weight measure is
 support-blind (it cannot record \emph{which} pair carries the
-weight, which is exactly what the per-pair dichotomy below turns
+weight, which is exactly what the per-pair dichotomy above turns
 on). We are not aware of a prior multipartite sector-support
 monotone in either literature.
 
@@ -887,11 +893,12 @@ codeword $c$ with $|c|\ge4$ and any $a,b\in\supp(c)$: $\sigma_C$
 plus $\tfrac{|c|-2}2$ declared $\Om$ auxiliaries on a pairing of
 $\supp(c)\setminus\{a,b\}$ yields, with nonzero probability in a
 preparation phase, a resource with nonzero $e_a+e_b$ charge ---
-hence positive $(a,b)$ rate by Theorem~\ref{thm:w2}(ii). Neither
-part alone suffices: the auxiliaries have zero $(a,b)$ rate
-(their charge code contains no $(a,b)$ weight-2 word,
-Theorem~\ref{thm:span}) and so does $\sigma_C$
-($e_a+e_b\notin C$, Theorem~\ref{thm:distance}).
+hence positive $(a,b)$ rate by Theorem~\ref{thm:w2}(ii). When
+$e_a+e_b\notin C$, neither part alone suffices: the auxiliaries
+have zero $(a,b)$ rate (their charge code contains no $(a,b)$
+weight-2 word, Theorem~\ref{thm:span}) and so does $\sigma_C$
+(Theorem~\ref{thm:distance}); when $e_a+e_b\in C$ the pair is
+one-shot available and activation is moot.
 \end{theorem}
 
 \begin{proof}
