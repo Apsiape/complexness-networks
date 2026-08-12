@@ -1,5 +1,7 @@
 # The Resource Theory of Complexness References in Real Quantum Networks
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21907063.svg)](https://doi.org/10.5281/zenodo.21907063)
+
 Real quantum theory with independent sources cannot reproduce certain
 complex network correlations (Renou et al., Nature 600, 625 (2021));
 the known remedy is a shared two-rebit state Ω = ¼(I − J⊗J), the
@@ -64,8 +66,7 @@ list above.
 
 ## Citation
 
-See `CITATION.cff`. A DOI badge will appear here once the Zenodo
-record for the first release is minted.
+See `CITATION.cff`. Archived at Zenodo: doi:10.5281/zenodo.21907063.
 
 ## License
 
