@@ -8,9 +8,7 @@ authors:
     email: apsiape@gmail.com
 version: 1.0.0
 date-released: 2026-08-12
-license:
-  - CC-BY-4.0
-  - MIT
+license: CC-BY-4.0
 repository-code: "https://github.com/Apsiape/complexness-networks"
 abstract: >-
   A resource theory for the reference frame of complexness in real
