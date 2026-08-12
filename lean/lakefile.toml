@@ -1,0 +1,10 @@
+name = "InvisibleSector"
+defaultTargets = ["InvisibleSector"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.30.0"
+
+[[lean_lib]]
+name = "InvisibleSector"
