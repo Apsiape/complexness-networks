@@ -74,6 +74,20 @@ Code (`lean/`) under the MIT License; paper text under CC BY 4.0.
 
 ## Changelog
 
+- **v1.0.2** (2026-08-12): scopes Corollary 7.3's general clause
+  and strengthens its aligned case. Continued adversarial
+  verification found explicit counterexamples to the
+  arbitrary-frame-code decoupled-product claim (one rank-obstructed
+  against any correction; one entangling the auxiliaries with the
+  resource); the corrected statement gives the exact
+  alignment/disjointness characterization (necessary and
+  sufficient), the closed correction rule flip iff (-1)^r h s = +1,
+  bonus references from overlapping covered codewords, and the
+  unconditional guarantee that the target-pair reference is exact
+  on every branch. Verification engines ship in `verify-descent/`.
+  Also records wgs2025's journal publication (PRL 135, 180201).
+  No other statement is affected.
+
 - **v1.0.1** (2026-08-12): corrects the accessibility corollary (Corollary 7.3 in the compiled numbering). Version 1.0.0
   stated the declared-auxiliary descent accounting as "unit-neutral
   at best"; the paper's own Theorem 6.3 protocol is nondemolition on

@@ -999,10 +999,22 @@ Theorem~\ref{thm:puncture} are nondemolition on the auxiliary
 pair's character, so the auxiliary survives with its reference
 intact --- for $|c| = 4$ the descent consumes one $\Om$ and
 yields two ($\Om$ on the target pair \emph{and} on the auxiliary
-pair, in product), and in general the descent of a used
+pair, in product). In general the descent of a used
 weight-$2k$ codeword consumes $k-1$ declared auxiliaries and
-yields $k$ pairwise references, each auxiliary returned in kind:
-the descent is catalytic over its auxiliaries.\footnote{Version
+yields the target-pair reference exactly, on every measurement
+branch; and when every codeword of the code meets the measured
+holders in complete auxiliary pairs (\emph{alignment}) and the
+covered codewords' unmeasured supports are pairwise-disjoint pair
+blocks (\emph{disjointness}) --- both automatic for a
+single-codeword state, and holding throughout the $\tau_4$ family
+--- the output is the full decoupled product: $k$ pairwise
+references, each auxiliary returned in kind (the descent catalytic
+over its auxiliaries), and every overlapping covered codeword
+yielding an additional reference on its own pair, with the closed
+correction rule ``flip one rebit of a codeword's output pair iff
+$(-1)^{r}hs=+1$'' ($h$ the outcome product over its measured
+holders, $r$ the number of auxiliary pairs inside its measured
+support, $s$ its sign).\footnote{Version
 1.0.1 corrects this sentence. Version 1.0.0 stated the accounting
 as ``unit-neutral at best: for $|c|=4$ the descent consumes one
 $\Om$ and yields one ($\tau_4$ acts as a relay), and for higher
@@ -1011,9 +1023,26 @@ Theorem~\ref{thm:puncture}'s own protocol: its measurements
 commute with the auxiliary pair's frame character and therefore
 preserve the auxiliary reference. Found in internal adversarial
 review (2026-08-12) and verified by explicit computation over all
-measurement branches at $|c|=4$ and $|c|=6$.} The content is
-\emph{accessibility} of the resource's charge together with unit
-net gain per descent; asymptotic conversion rates remain
+measurement branches at $|c|=4$ and $|c|=6$.}\footnote{Version
+1.0.2 scopes the general clause and adds the
+alignment/disjointness characterization and the correction rule.
+Version 1.0.1 asserted the decoupled product with in-kind
+auxiliary return for arbitrary frame codes; continued adversarial
+verification (two independent engines, exhaustive branch checks up
+to 12 rebits, independently reproduced) found explicit
+counterexamples: a code whose covered words' output pairs
+intersect produces a correlated, rank-obstructed output that no
+correction --- local or global --- can factor, and a non-aligned
+covered word leaves the auxiliaries entangled with the resource.
+Alignment and disjointness as stated are exactly necessary and
+sufficient for the decoupled product ($0$ violations of the
+biconditional over $124$ exhaustive and $150$ randomized setups);
+the target-pair reference itself is exact unconditionally ($0$
+failures over $4{,}176$ branches, including every counterexample).
+No other statement is affected.} The content is
+\emph{accessibility} of the resource's charge ---
+unconditional at the target pair, with unit net gain per descent
+in the aligned regime; asymptotic conversion rates remain
 open. Noncommutativity can make the
 frame resource necessary (Proposition~\ref{prop:abelian}); within
 the two declared mechanisms it cannot make a weight-$\ge4$
@@ -1092,7 +1121,8 @@ standard formalism of quantum theory, Phys.\ Rev.\ Lett.\
 \textbf{128}, 040403 (2022).
 \bibitem{wgs2025} M. Weilenmann, N. Gisin, P. Sekatski, Partial
 independence suffices to rule out real quantum theory
-experimentally, arXiv:2502.20102.
+experimentally, Phys.\ Rev.\ Lett.\ \textbf{135}, 180201 (2025);
+arXiv:2502.20102.
 \bibitem{mckague2009} M. McKague, M. Mosca, N. Gisin, Simulating
 quantum systems using real Hilbert spaces, Phys.\ Rev.\ Lett.\
 \textbf{102}, 020505 (2009).
