@@ -66,7 +66,7 @@ list above.
 
 ## Citation
 
-See `CITATION.cff`. Archived at Zenodo: doi:10.5281/zenodo.21907062 (concept, resolves to latest); this version: doi:10.5281/zenodo.21910329.
+See `CITATION.cff`. Archived at Zenodo: doi:10.5281/zenodo.21907062 (concept, resolves to latest); this version (v1.0.2): doi:10.5281/zenodo.21911717.
 
 ## License
 
