@@ -1,5 +1,4 @@
 import numpy as np, itertools, sys, time
-sys.path.insert(0, r"C:\Users\PC\AppData\Local\Temp\claude\c--Infanox-finite-contact\5e738f3c-f46b-4ebc-9d44-8215213f7a82\scratchpad\fc_ref")
 from lib import *
 from proto import *
 

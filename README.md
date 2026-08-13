@@ -74,6 +74,22 @@ Code (`lean/`) under the MIT License; paper text under CC BY 4.0.
 
 ## Changelog
 
+- **v1.0.3** (2026-08-12): repairs the v1.0.2 verification artifact
+  and sharpens the Corollary 7.3 footnote. The shipped sweep had a
+  machine-local import path (unrunnable from a clean clone) and
+  reported one biconditional violation without diagnosis; the
+  repaired suite (all scripts self-contained, exit codes armed)
+  identifies it as a sign-killed exception class: the formal
+  alignment/disjointness conditions can fail while the sign
+  character kills precisely the offending codewords on every
+  surviving branch, so the realized state is the product. The
+  footnote now states: sufficiency unconditional; necessity at the
+  level of the surviving (positive-probability) sector, where the
+  equivalence holds with zero violations (120 randomized setups,
+  1,784 surviving branches; diagnostic in t7_exception.py, missing
+  module t4_general.py now shipped). Target-pair exactness
+  unaffected.
+
 - **v1.0.2** (2026-08-12): scopes Corollary 7.3's general clause
   and strengthens its aligned case. Continued adversarial
   verification found explicit counterexamples to the

@@ -1034,11 +1034,20 @@ counterexamples: a code whose covered words' output pairs
 intersect produces a correlated, rank-obstructed output that no
 correction --- local or global --- can factor, and a non-aligned
 covered word leaves the auxiliaries entangled with the resource.
-Alignment and disjointness as stated are exactly necessary and
-sufficient for the decoupled product ($0$ violations of the
-biconditional over $124$ exhaustive and $150$ randomized setups);
-the target-pair reference itself is exact unconditionally ($0$
-failures over $4{,}176$ branches, including every counterexample).
+Alignment and disjointness are sufficient unconditionally, and
+necessary at the level of the code's \emph{surviving}
+(positive-probability) sector: an exception class exists in which
+the formal conditions fail while the sign character kills
+precisely the offending codewords on every surviving branch, so
+the realized state is the product regardless; evaluated on the
+effective code, the equivalence holds with no violations (shipped
+sweep \texttt{verify-descent/t6\_bigsweep.py}: $120$ randomized
+setups, $1{,}784$ surviving branches, $0$ sufficiency failures,
+$0$ effective-code violations, $1$ exception-class setup, with
+the diagnostic in \texttt{t7\_exception.py}); branch probabilities
+are uniform iff no codeword lies inside the measured set. The
+target-pair reference itself is exact unconditionally on every
+surviving branch, including in every counterexample.
 No other statement is affected.} The content is
 \emph{accessibility} of the resource's charge ---
 unconditional at the target pair, with unit net gain per descent

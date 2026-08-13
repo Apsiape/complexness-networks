@@ -1,5 +1,4 @@
 import sys
-sys.path.insert(0, r"C:\Users\PC\AppData\Local\Temp\claude\c--Infanox-finite-contact\5e738f3c-f46b-4ebc-9d44-8215213f7a82\scratchpad\fc_ref")
 from cases import *
 
 # ---- banked 1: |c|=4, one auxiliary pair.  target {0,1}, measured {2,3}
